@@ -327,7 +327,7 @@ In this exercise, you will add a file analysis tool to the `Fabric-NN` agent. Th
 
 9. Select the `Add Property` button and enter the following values:
     - **Property Key**: `foundationallm_aca_code_execution_enabled`
-    - **Property Type**: `Bool`
+    - **Property Type**: `Boolean`
     - **Property Value**: `true`
   
     Select `Save` to save the property.
