@@ -92,7 +92,7 @@ In this exercise, you will add a SQL tool to the `Fabric-NN` agent. This tool wi
     Select the `Save` button to save the tool.
     Select the `Save Changes` button to save the agent.
 
-10. In the **User Portal**, ask the same question you asked before: `Who are you?`. Notice how the agent's response has now chnaged to include the SQL tool you just added.
+10. In the **User Portal**, ask the same question you asked before: `Who are you?`. Notice how the agent's response has now changed to include the SQL tool you just added.
 
     ![User Portal - Agent with SQL tool](media/01-user-portal-agent-with-sql-tool.png)
 
@@ -110,7 +110,7 @@ In this exercise, you will add a SQL tool to the `Fabric-NN` agent. This tool wi
 
     Select the `Save` button to save the tool and then select the `Save Changes` button to save the agent.
 
-13. In the `Prompts` section, locate the `Fabric-01-Tool-SQL-Router` prompt and select the `Edit` action associated with it. Replace the **Prompt Prefix** with the following value:
+13. From the left sidebar, select `Prompts` section (underneath the `Agents` header), locate the `Fabric-01-Tool-SQL-Router` prompt and select the `Edit` action associated with it. Replace the **Prompt Prefix** with the following value:
 
     ```txt
     Assume all geography and weather related questions are referring to the data available in the SQL tool.
@@ -138,7 +138,7 @@ In this exercise, you will add a SQL tool to the `Fabric-NN` agent. This tool wi
     - Use the two letter abbreviation when filtering by State.
     - Use the 5-digit ZipCode when filtering by ZipCode.
 
-    When genrating SQL that involves the Weather table, follow these rules:
+    When generating SQL that involves the Weather table, follow these rules:
     - Use the following columns: DateID, GeographyID, PrecipitationInches, and AvgTemperatureFahrenheit.
     - When asked about precipitation, use PrecipitationInches.
     - When asked about temperature, use AvgTemperatureFahrenheit.
@@ -191,8 +191,8 @@ In this exercise, you will add a document-based knowledge source to the `Fabric-
 
 6. Select the `Add Tool Resource` button and enter the following values:
     - **Resource Type**: `Vector Store`
-    - **Resource**: `FOhioLandsBook`
-    - **Resource Role**: `inexing_profile`
+    - **Resource**: `OhioLandsBook`
+    - **Resource Role**: `indexing_profile`
   
     Select `Save` to save the resource.
 
@@ -337,4 +337,4 @@ In this exercise, you will add a file analysis tool to the `Fabric-NN` agent. Th
 
 10. In the **User Portal**, ask the following question: `What is the average price of products of type Jackets?`
 
-    Select the `FileAnalysis` content artifact and observe the details of the invocation of the newly added KQL tool.
+    Select the `FileAnalysis` content artifact and observe the details of the invocation of the newly added File Analysis tool.
